@@ -12,7 +12,7 @@ while(i<10){
 	printf("Enter value and code of component:\n");
 	scanf("%s",&component);
 	int len = strlen(component);
-	if(component[len-1]=='R' || component[len-1]=='L' || component[len-1]=='C'){
+	if(component[len-1]=='R' || component[len-1]=='L' || component[len-1]=='C' && component[len-2]=='-'){
 		if(component[len-1]=='R'){
 			int value = atoi(component);
 			if(value<10){
